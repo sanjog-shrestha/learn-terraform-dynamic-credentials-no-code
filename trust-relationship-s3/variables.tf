@@ -88,13 +88,4 @@ variable "tfc_variable_set_name" {
   description = "TFC Variable Set Name"
 }
 
-variable "vault_user_name" {
-  description = "Username for Vault userpass authentication"
-  type        = string
-}
 
-variable "vault_user_password" {
-  description = "Password for Vault userpass authentication"
-  type        = string
-  sensitive   = true
-}

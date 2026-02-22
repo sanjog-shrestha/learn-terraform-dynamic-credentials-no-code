@@ -80,7 +80,7 @@ variable "aws_iam_user_arn" {
   description = "AWS IAM user ARN."
 }
 
-variable "vcs_oauth_client_name" {
+variable "vcs_oath_client_name" {
   type        = string
   description = "The name of the OAuth client."
 }

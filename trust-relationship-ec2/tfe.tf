@@ -5,10 +5,9 @@ provider "tfe" {
   hostname = var.tfc_hostname
 }
 
-data "tfe_oauth_client" "client" {
-  organization     = var.tfc_organization_name
-  name             = var.vcs_oath_client_name
-  service_provider = var.vcs_service_provider
+vcs_repo {
+  identifier     = var.vcs_identifier
+  oauth_token_id = ot-rD8ZgvBn7Te2WGBv
 }
 
 resource "tfe_workspace" "trusted_workspace" {

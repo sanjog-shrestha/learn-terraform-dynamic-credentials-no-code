@@ -1,11 +1,18 @@
 # Copyright (c) HashiCorp, Inc.
 # SPDX-License-Identifier: MPL-2.0
 
+# The error encountered is due to invalid credentials for the Vault provider.
+# Since your username is "trust_relationships" and your password is "root",
+# you can specify these directly using the 'username' and 'password' arguments
+# in the provider block for 'auth_login_userpass'.
+
 provider "vault" {
   address = var.vault_url
 
   auth_login_userpass {
     namespace = var.vault_namespace
+    username  = "trust_relationships"
+    password  = "root"
   }
 }
 

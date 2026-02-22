@@ -4,6 +4,11 @@
 
 provider "vault" {
   address = var.vault_url
+
+  auth_login_userpass {
+    username = var.vault_user_name
+    password = var.vault_user_password
+  }
 }
 
 resource "vault_aws_secret_backend_role" "aws_secret_backend_role" {

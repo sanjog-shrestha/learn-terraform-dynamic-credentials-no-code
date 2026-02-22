@@ -44,7 +44,7 @@ variable "vault_namespace" {
 variable "vault_url" {
   type        = string
   description = "URL of vault cluster"
-  default     = "https://contortionistic-ventilable-alanna.ngrok-free.dev""
+  default     = "https://contortionistic-ventilable-alanna.ngrok-free.dev"
 }
 
 variable "tfc_vault_audience" {

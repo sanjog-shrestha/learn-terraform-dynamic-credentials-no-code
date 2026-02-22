@@ -1,13 +1,12 @@
 # Copyright (c) HashiCorp, Inc.
 # SPDX-License-Identifier: MPL-2.0
 
-
 provider "vault" {
   address = var.vault_url
 
   auth_login_userpass {
-    username = var.TERRAFORM_VAULT_USERNAME
-    password = var.TERRAFORM_VAULT_PASSWORD
+    username = var.vault_user_name
+    password = var.vault_user_password
   }
 }
 

@@ -6,8 +6,8 @@ provider "vault" {
   address = var.vault_url
 
   auth_login_userpass {
-    username = env.TERRAFORM_VAULT_USERNAME
-    password = env.TERRAFORM_VAULT_PASSWORD
+    username = var.TERRAFORM_VAULT_USERNAME
+    password = var.TERRAFORM_VAULT_PASSWORD
   }
 }
 
